@@ -747,7 +747,7 @@ Copyright © 猫叔 2023-2024 <?php echo home_url();?> <?php echo bloginfo( 'nam
 
 ### 插入脚本和样式 ：
 
-##### 1.直接在header. php内
+##### 1.直接在header. php内 [注：本方法应该避免使用，不推荐]
 
 ```php
 get_stylesheet_uri();//获取style.css的路径 （http://wp.tt/wp-content/themes/ms1/style.css）
@@ -759,7 +759,8 @@ esc_url(get_stylesheet_uri());//清理掉多余的字符
 get_template_directory_uri(); //获取主题目录路径
 
 ```
-##### 2. 在functions. php内
+##### 2. 在functions. php内  【生产环境时，务必使用本方法】
+
 > 注意，一定要加上 <?php wp_head(); ?>
 
 1. 使用 `wp_enqueue_script()` 将 JS 文件插入队列
