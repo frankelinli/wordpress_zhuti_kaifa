@@ -1,0 +1,244 @@
+/*
+Theme Name: 猫叔的主题01
+Description: 一个超级简单的入门主题 01
+Author: 写代码的猫叔
+Version: 1.0
+*/
+body{
+    background: #f5f5f5;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-box{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+
+.list .date-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 分页 */
+
+
+.pagination{
+    margin-bottom: 20px;
+}
+.pagination .page-numbers{
+    background: #fff;
+    border-radius: 50%;
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.pagination .current,
+.pagination a.page-numbers:hover{
+    background: #000;
+    color: #fff;
+}
+
+.pagination .nav-links .prev,
+.pagination .nav-links .next{
+    width:auto;
+    border-radius: 15px;
+    padding: 0 15px;
+}
+
+.pagination .nav-links .dots{
+    width: auto;
+    background: none;
+}
+
+/* header */
+header{
+
+    width: 100%;
+    /* height: 50px; */
+    margin-bottom: 20px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+}
+
+/* 分类菜单 */
+header #nav-bar .navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header #nav-bar .navbar-nav li{
+    margin-left:5px;
+    padding: 8px 15px;
+}
+header #nav-bar .navbar-nav li:hover{
+    background: #006dff;
+    border-radius: 15px;
+}
+header #nav-bar .navbar-nav li a{
+    
+    color:#006dff;
+}
+header #nav-bar .navbar-nav li:hover a{
+    color: #fff;
+
+}
+
+/* 搜索框 */
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#searchform .screen-reader-text{
+    display: none;
+}
+
+#searchform #s{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#searchform #searchsubmit{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 6px 16px;
+    cursor: pointer;
+   
+}
+#searchform #searchsubmit:hover{
+    background: #000;
+    color: #fff;
+}
+
+
+.big-container{
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.big-container .big-img{
+    width:100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.big-container .big-main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.big-container #searchsubmit{
+    display: none;
+}
+.big-container #searchform #s{
+    padding: 12px 25px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    opacity: 0.75;
+}
+.card-box{
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #ddd;
+}
+.container-main{
+    width:900px;
+}
+.sider-bar{
+    width:260px;
+    margin-left: 20px;
+}
+
+
+/* 评论区 */
+
+.comments-box{
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px 4px #e0e0e0;
+}
+
+.comments-box h3 span{
+    background: #ddd;
+    border-radius: 15px;
+    padding: 1px 10px;
+    margin-left: 10px;
+}
+
+
+.comments-box .comment-list{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ddd;
+}
+.comments-box .comment-list:last-child{
+    border-bottom: none;
+}
+.comments-box .avatar{
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.comments-box .comment_author{
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.comments-box p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+.comments-box .children{
+    margin-left: 30px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.edit-line{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.edit-line a{
+    font-size: 15px;
+}
+
+.edit-line .edit-link{
+    margin-right: 10px;
+}
